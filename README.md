@@ -2,9 +2,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 
 ## DEMO
-
-https://andriykooo.github.io/rick-and-morty/
-
+ 
+Demo: https://rick-and-morty-cco9spgic-andriykooo.vercel.app/
 ## Getting Started
 
 First, run the development server:
