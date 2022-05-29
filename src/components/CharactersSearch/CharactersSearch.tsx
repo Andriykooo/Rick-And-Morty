@@ -14,7 +14,7 @@ const CharactersSearch: FC = () => {
       router.push(`/search/${query}`);
     }
   };
-
+ 
   return (
     <form
       className={styles.charactersSearch}
