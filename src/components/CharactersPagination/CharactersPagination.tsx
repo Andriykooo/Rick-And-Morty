@@ -22,7 +22,7 @@ const CharactersPagination: FC<CharactersPaginationProps> = ({
     <div className={styles.charactersPagination__pagination}>
       {router.pathname !== '/' && (
         <Link href={prevLink}>
-          <a className={styles.charactersPagination__button}>Prev</a>
+          <a className={styles.charactersPagination__button}>Previous</a>
         </Link>
       )}
       {currentPage !== pages && (
