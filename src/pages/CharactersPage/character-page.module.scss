@@ -1,0 +1,35 @@
+.characterPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  min-height: 100vh;
+
+  background-color: #24282f;
+  color: #ffffff;
+
+  &__nav {
+    display: flex;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 160px;
+    height: 60px;
+    margin: 20px;
+
+    background-color: #3c3e44;
+    border-radius: 10px;
+
+    color: #fff;
+    font-weight: bold;
+
+    &:hover {
+      color: red;
+    }
+  }
+}

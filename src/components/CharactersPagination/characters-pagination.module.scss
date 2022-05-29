@@ -1,0 +1,22 @@
+.charactersPagination {
+  &__pagination {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  &__button {
+    padding: 20px 30px;
+    margin: 20px;
+
+    background-color: #3c3e44;
+    border-radius: 10px;
+
+    color: #ffffff;
+    font-weight: bold;
+
+    &:hover {
+      color: #55cc44;
+    }
+  }
+}
