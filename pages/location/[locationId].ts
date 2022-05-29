@@ -20,12 +20,18 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps = async (
   context: GetStaticPropsContext
 ) => {
-  const locationId = context.params.locationId;
-  const location = await loadLocationData.getCharacterLocation(+locationId);
+  try {
+    const locationId = context.params.locationId;
+    const location = await loadLocationData.getCharacterLocation(+locationId);
 
-  return {
-    props: { location },
-  };
+    return {
+      props: { location },
+    };
+  } catch {
+    return {
+      notFound: true,
+    };
+  }
 };
 
 export default Location;

@@ -20,12 +20,18 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps = async (
   context: GetStaticPropsContext
 ) => {
-  const characterId = context.params.characterId;
-  const character = await loadData.getCharacterInfo(+characterId);
+  try {
+    const characterId = context.params.characterId;
+    const character = await loadData.getCharacterInfo(+characterId);
 
-  return {
-    props: { character },
-  };
+    return {
+      props: { character },
+    };
+  } catch {
+    return {
+      notFound: true,
+    };
+  }
 };
 
 export default Character;
